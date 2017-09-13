@@ -1,0 +1,484 @@
+@font-face {
+    font-family: Calibri Light;
+    src: url("../fonts/calibril.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, "Calibri Light", sans-serif;
+    font-weight: 100;
+}
+
+#navigation {
+    box-shadow: 0px 1px 1px silver;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+#navigation nav, #header, #wrapper {
+    width: 290px;
+}
+
+#navigation nav {
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav a {
+    padding-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: black;
+    font-weight: 100;
+}
+
+#currentPage {
+    color: red;
+}
+
+nav a:hover {
+    color: rgb(127, 130, 130);
+}
+
+#header {
+    height: 87px;
+    margin: 48px auto 10px;
+    background: url("../img/header.jpg") center no-repeat;
+    background-size: 100%;
+}
+
+#wrapper {
+    margin: 30px auto 0;
+}
+
+#wrapper h1 {
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: black; 
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#pageInfoHeader {
+    width: 8%;
+    height: 350px;
+    border-left: 1px solid red;
+    border-top: 1px solid rgb(235,235,235);
+    border-right: 1px solid rgb(235,235,235);
+    border-bottom: 1px solid rgb(235,235,235);
+}
+
+#pageInfo {
+    width: 88%;
+    margin-left: 4%;
+}
+
+#left {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+#right {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.floatLeft {
+    float:left;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.rightSide h2 {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 100;
+    border-bottom: 1px solid rgb(235,235,235);
+    border-left: 1px solid rgb(235,235,235);
+    border-right: 1px solid rgb(235,235,235);
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.rightSide {
+    border-top: 1px solid red;
+    margin-bottom: 70px;
+}
+
+#houseIMG {
+    margin: 0 0 20px;
+    width: 100%;
+    height: 280px;
+    background-image: url("../img/house.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#address {
+    font-weight: 100;
+    font-size:0.9em;
+    text-transform: uppercase;
+}
+
+#address a {
+    color: red;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+#events dt {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+#events dd {
+    margin: 0 0 15px 20px;
+}
+
+#aboutLink {
+    margin: 50px 0 10px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.abouts {
+    margin-bottom: 30px;
+}
+
+#imgAbout {
+    width: 47%;
+    height: 90px;
+    background: url("../img/hands.jpg") center no-repeat;
+    background-size: 100%;
+    margin: -20px 15px 5px 0;
+}
+
+.line {
+    width: 60%;
+    border-top: 1px solid rgb(235,235,235);
+    margin-top: 15px;
+}
+
+.boxcr {
+    width:40%;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid rgb(235,235,235);
+    border-right: 1px solid rgb(235,235,235);
+    font-family: Calibri, "Calibri Light", sans-serif;
+}
+
+.boxcr a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+}
+
+@media screen and (min-width: 434px) {
+    #navigation nav, #header, #wrapper {
+        width: 380px;
+    }
+
+    #header {
+        height: 112px;
+    }
+
+    #wrapper {
+        margin: 40px auto 0;
+    }
+
+    #pageInfoHeader {
+        width: 7%;
+    }
+
+    #pageInfo {
+        width: 89%;
+    }
+
+    #right {
+        margin-left: 23%;
+        width: 77%;
+    }
+
+    #aboutLink {
+        margin: 70px 0 10px;
+    }
+
+    .abouts {
+        margin-bottom: 20px;
+    }
+
+    #imgAbout {
+        width: 40%;
+        height: 100px;
+        margin: 5px 15px 5px 0;
+    }
+
+    .line {
+        width: 70%;
+    }
+
+    .boxcr {
+        width:30%;
+    }
+
+    .boxcr a {
+        text-decoration: none;
+        color: black;
+        padding: 8px 15px;
+    }    
+}
+
+@media screen and (min-width: 544px) {
+    #navigation nav, #header, #wrapper {
+        width: 480px;
+    }
+
+    #header {
+        height: 139px;
+    }
+
+    #pageInfoHeader {
+        width: 6%;
+    }
+
+    #pageInfo {
+        width: 90%;
+    }
+
+    #right {
+        margin-left: 35%;
+        width: 65%;
+    }
+
+    #aboutLink {
+        margin: 100px 0 10px;
+        font-size: 1.2em;
+    }
+
+    .abouts {
+        margin-bottom: 40px;
+    }
+
+    #imgAbout {
+        width: 37%;
+        height: 140px;
+        margin: -25px 15px 5px 0;
+    }
+
+    .line {
+        width: 75%;
+    }
+
+    .boxcr {
+        width: 25%;
+    }    
+}
+
+@media screen and (min-width: 672px) {
+    #navigation nav, #header, #wrapper {
+        width: 580px;
+    }
+
+    #header {
+        height: 166px;
+    }
+
+    #wrapper {
+        margin: 38px auto 0;
+    }
+
+    #right {
+        margin-left: 40%;
+        width: 60%;
+    }
+
+    .abouts {
+        margin-bottom: 70px;
+    }
+
+    #imgAbout {
+        height: 150px;
+        margin: -40px 15px 20px 0;
+    }
+
+    .line {
+        width: 80%;
+    }
+
+    .boxcr {
+        width: 20%;
+    }    
+}
+
+@media screen and (min-width: 800px) {
+    #navigation nav, #header, #wrapper {
+        width: 700px;
+    }
+
+    #header {
+        height: 199px;
+    }
+
+    #wrapper {
+        margin: 45px auto 0;
+    }
+
+    #pageInfoHeader {
+        width: 5%;
+    }
+
+    #pageInfo {
+        margin-left: 5%;
+    }
+
+    #right {
+        margin-left: 50%;
+        width: 50%;
+    }
+
+    .abouts {
+        margin-bottom: 100px;
+    }
+
+    #imgAbout {
+        height: 170px;
+        margin: -40px 20px 0px 0;
+    }
+
+    .line {
+        width: 83%;
+    }
+
+    .boxcr {
+        width: 17%;
+    }
+}
+
+@media screen and (min-width: 987px) {
+    #navigation nav, #header, #wrapper {
+        width: 900px;
+    }
+
+    #header {
+        height: 250px;
+    }
+
+    #wrapper {
+        margin: 60px auto 0;
+    }
+
+    #left {
+        width: 64%;
+        float: left;
+    }
+
+    #right {
+        margin-left: 3%;
+        width: 33%;
+        float: left;
+    }
+
+    .abouts {
+        margin-bottom: 60px;
+    }
+
+    #imgAbout {
+        height: 150px;
+        margin: -40px 30px 5px 0;
+    }
+
+    .line {
+        width: 80%;
+    }
+
+    .boxcr {
+        width: 20%;
+    }    
+}
+
+@media screen and (min-width: 1200px) {   
+    #navigation nav, #header, #wrapper {
+        width: 1100px;
+    }
+
+    #header {
+        height: 300px;
+    }
+
+    #wrapper {
+        margin: 80px auto 0;
+    }
+
+    #left {
+        width: 67%;
+    }
+
+    #right {
+        width: 30%;
+    }
+
+    .rightSide h2 {
+        font-size: 1em;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    .rightSide {
+        margin-bottom: 100px;
+    }
+
+    #houseIMG {
+        margin: 0 0 30px;
+        height: 300px;
+    }
+
+    .abouts {
+        margin-bottom: 80px;
+    }
+
+    #imgAbout {
+        height: 200px;
+        margin: -70px 30px 5px 0;
+    }
+
+    .line {
+        width: 82%;
+        margin-top: 18px;
+    }       
+
+    .boxcr {
+        width: 18%;
+        font-size: 0.8em;
+    }
+}
