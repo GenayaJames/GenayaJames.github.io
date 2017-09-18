@@ -2,7 +2,6 @@
 
 
 #slideshow {
-  /*max-width: 736px;*/
   max-width: 100%;
   position: relative; 
   z-index: 0; 
@@ -14,7 +13,6 @@
 
 .slides img {
 	width: 100%;
-	height: 350px;
 	height: 100%;
 }
 
@@ -140,7 +138,6 @@
 
 @media screen and (min-width:1200px) {
 #slideshow {
-  /*max-width: 736px;*/
   max-width: 100%;
   position: relative; 
   z-index: 0; 
@@ -152,7 +149,6 @@
 
 .slides img {
 	width: 100%;
-	height: 380px;
 	height: 100%;
 }
 
