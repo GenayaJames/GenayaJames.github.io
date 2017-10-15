@@ -69,6 +69,34 @@ function main() {
 		document.getElementById(id_name).innerHTML = '<a href=\"#'+ref_name+'\" class=\"eventAdded\">'+day+'</a>';
 	}
 
+	function makeEvent(id_name, d_event, e_descrip) {
+		var node = document.createElement("DIV");
+		node.id = id_name;
+		node.className = "allEvents";
+
+		var node2 = document.createElement("DIV");
+		node2.className = "pencil_icon";
+
+		node.appendChild(node2);
+
+		var node3 = document.createElement("H2");
+		var node3x = document.createTextNode(d_event);
+		node3.appendChild(node3x);
+		node.appendChild(node3);
+
+		var node4 = document.createElement("P");
+		var node4x = document.createTextNode(e_descrip);
+		node4.appendChild(node4x);
+		node.appendChild(node4);
+
+	    document.getElementById("eventInfo").insertBefore(node, document.getElementById("pencil_end"));
+	}
+
+	makeEvent("M828F901", "Monday, August 28", "Closed until Friday, September 1, 2017");
+	makeEvent("M904","Monday, September 4, 2017", "Labor Day - Closed");
+	makeEvent("M1009", "Monday, October 9, 2017", "Columbus Day - Closed");
+	makeEvent("F1110", "Friday, November 10, 2017", "Veterans Day - Closed");
+
 	 
 
 
