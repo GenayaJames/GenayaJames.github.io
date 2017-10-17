@@ -12,9 +12,32 @@
   margin-bottom: 20px;
 }
 
+#year_number {
+  margin-bottom: 30px;
+}
+
+#year_number button {
+  background-color: transparent;
+  color: red;
+  border: none;
+  margin-right: 40px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
 #yearlyCalendar {
-	text-align: center;
+  text-align: center;
   width: 100%;
+}
+
+.calendar {
+  display: none;
+}
+
+#calendar_2017 {
+    display: block;
 }
 
 .innertable {
@@ -29,9 +52,9 @@
 }
 
 th {
-	background-color: black;
-	color: white;
-	font-weight: 500;
+  background-color: black;
+  color: white;
+  font-weight: 500;
 }
 
 .invisible {
@@ -39,17 +62,18 @@ th {
 }
 
 #currentFormat {
-	color: red;
+  color: red;
 }
 
 .days {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .eventAdded {
-	color: red;
-	font-weight: 500;
+  color: red;
+  font-weight: 500;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #eventCalendar {
@@ -155,4 +179,3 @@ th {
         margin-left: 5%;
     }
 }
-

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" type="text/css" href="../css/index.css">
   <link rel="stylesheet" type="text/css" href="../css/schedule.css">
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
 </head>
 <body>
   <div id="navigation">
@@ -27,21 +28,28 @@
         <div id="aboutCalendar">
           <p><span style="color:red">*</span> Events will be added as time goes on, so please make sure to check the schedule often so you'll always be up to date. <span style="color:red">*</span></p>
           <p><span style="color:red">*</span> All days that have events are highlighted on the calendar. Clicking on those dates will give you the event descriptions. <span style="color:red">*</span></p>
-        </div>     
-        <div id="yearlyCalendar"></div>
+        </div>  
+        <div id="year_number">
+          <button id="button2017">2017</button>
+          <button id="button2018">2018</button>
+        </div>   
+        <div id="yearlyCalendar">
+          <div id="calendar_2017" class="calendar"></div>
+          <div id="calendar_2018" class="calendar"></div>
+        </div>
       </div>
       <div class="clear"></div>
 
       <div id="eventCalendar">
-        <div id="eventInfoHeader" class="floatLeft"><h1>2<br/>0<br/>1<br/>7<br/> <br/>E<br/>v<br/>e<br/>n<br/>t<br/>s</h1></div>
+        <div id="eventInfoHeader" class="floatLeft"><h1>2<br/>0<br/>1<br/>7<br/> <br/>&darr;<br/> <br/>2<br/>0<br/>1<br/>8</h1></div>
 
-      <div id="eventInfo" class="floatLeft">
-        
-        <div id="pencil_end" class="allEvents">
-          <div class="pencil_icon"></div>
+        <div id="eventInfo" class="floatLeft">
+          
+          <div id="pencil_end" class="allEvents">
+            <div class="pencil_icon"></div>
+          </div>          
+
         </div>
-
-      </div>
       </div>
       <div class="clear"></div>
       
@@ -49,48 +57,14 @@
     
 
     <!--Right side of website-->
-    <div id="right">
-      <div id="info" class="rightSide">
-        <h2>About Us</h2>
-        <div class="clear"></div>
-        <div id="houseIMG"></div>
-        <div id="address">
-          <p><span class="bold">Address: </span><a href="https://www.google.com/maps/place/3745+Willett+Ave,+Bronx,+NY+10467/@40.883136,-73.8671797,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f33d8f414921:0x8dd28dea0c0a368d!8m2!3d40.883136!4d-73.864991">3745 Willett Ave, Bronx, NY, 10467</a></p>
-          <p><span class="bold">Office Phone: </span><a id="number" href="tel:718-519-6170">(718) 519-6170</a></p>
-          <p><span class="bold">Business Days: </span>Monday - Friday</p>
-          <p><span class="bold">Business Hours: </span>7:00AM - 6:30PM</p>
-        </div>        
-      </div> 
-      
-      <div id="events" class="rightSide">
-        <h2>Upcoming Events</h2>
-        <div class="clear"></div>
-        <div class="event">
-          <dl>
-            <dt class="bold">Monday, August 28, 2017</dt>
-            <dd>School will be closed until Friday, September 1, 2017</dd>
-            <dt class="bold">Tuesday, August 29, 2017</dt>
-            <dd>Permission slips for the trip to the zoo are due.</dd>
-            <dt class="bold">Monday, September 04, 2017</dt>
-            <dd>Labor Day - School will be closed</dd>
-            <dt class="bold">Monday, September 05, 2017</dt>
-            <dd>School is in session</dd>
-            <dt class="bold">Monday, September 11, 2017</dt>
-            <dd>Patriot Day</dd>
-            <dt class="bold">Friday, September 15, 2017</dt>
-            <dd>National POW/MIA Recognition Day</dd>
-          </dl>
-        </div>
-      </div>
-
-      <div id="events" class="rightSide"></div>
-
-    </div>
+    <div id="right"></div>
 
      
     <div class="clear"></div>
   </div>  
 
-  <script src="../js/schedule.js"></script>
+  <script type="text/javascript" src="../js/index.js"></script>
+  <script type="text/javascript" src="../js/schedule.js"></script>
+  <script type="text/javascript" src="../js/sched.js"></script>
 </body>
 </html>
