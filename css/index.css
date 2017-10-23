@@ -39,7 +39,8 @@ body {
 }
 
 nav a {
-    padding-right: 20px;
+    margin-right: 20px;
+    padding: 0 5px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.8em;

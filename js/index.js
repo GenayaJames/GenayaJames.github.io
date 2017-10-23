@@ -7,12 +7,10 @@ function main() {
 
 		content+='<div id="events" class="rightSide"><h2>Upcoming Events</h2><div class="clear"></div><div class="event"><dl>';
 
-		var events_array = [["Monday, August 28, 2017","School will be closed until Friday, September 1, 2017"],
-		["Tuesday, August 29, 2017","Permission slips for the trip to the zoo are due."],
-		["Monday, September 04, 2017","Labor Day - School will be closed"],
-		["Monday, September 05, 2017","School is in session"],
-		["Monday, September 11, 2017","Patriot Day"],
-		["Friday, September 15, 2017","National POW/MIA Recognition Day"]];
+		var events_array = [["Friday, November 10, 2017","Veterans Day - Closed"],
+		["Thursday, November 23, 2017","Thanksgiving - Closed, both Thursday and Friday, November 24, 2017"],
+		["Monday, January 15, 2018","Martin Luther King Day - Closed"],
+		["Monday, February 19, 2018","President's Day - Closed"]];
 
 		var events_length = events_array.length;
 
