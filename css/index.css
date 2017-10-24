@@ -57,10 +57,12 @@ nav a:hover {
 }
 
 #header {
-    height: 87px;
+    /*height: 87px;*/
+    height: 167px;
     margin: 48px auto 10px;
     background: url("../img/header.jpg") center no-repeat;
-    background-size: 100%;
+    /*background-size: 100%;*/
+    background-size: 290px 167px;
 }
 
 #wrapper {
@@ -72,13 +74,13 @@ nav a:hover {
     font-weight: 100;
     text-transform: uppercase;
     color: black; 
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 20px;
 }
 
 #pageInfoHeader {
-    width: 8%;
-    height: 350px;
+    width: 7%;
+    height: 300px;
     border-left: 1px solid red;
     border-top: 1px solid rgb(235,235,235);
     border-right: 1px solid rgb(235,235,235);
@@ -87,7 +89,7 @@ nav a:hover {
 
 #pageInfo {
     width: 88%;
-    margin-left: 4%;
+    margin-left: 5%;
 }
 
 #left {
@@ -166,7 +168,7 @@ nav a:hover {
     margin: 0 0 15px 20px;
 }
 
-#aboutLink {
+.info_sections {
     margin: 50px 0 10px;
     font-size: 1.1em;
     text-align: justify;
@@ -174,6 +176,10 @@ nav a:hover {
 
 .abouts {
     margin-bottom: 30px;
+}
+
+.continueReading {
+    margin-top: 30px;
 }
 
 #imgAbout {
@@ -209,25 +215,73 @@ nav a:hover {
     padding: 8px 15px;
 }
 
+#gamesSection {
+    margin-top: 30px;
+}
+
+#game_container {
+    height: 165px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.games_container {
+    margin: 2px 2px 20px 2px;
+    width: 140px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: crimson;
+    padding: 5px;
+    float: left;
+}
+
+.cards {
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    margin: 1px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.game_descrip {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
 @media screen and (min-width: 434px) {
     #navigation nav, #header, #wrapper {
         width: 380px;
     }
 
     #header {
-        height: 112px;
+        height: 232px;
+        background-size: 380px 232px;
     }
 
     #wrapper {
         margin: 40px auto 0;
     }
 
+    #wrapper h1 {
+        font-size: 1.5em;
+    }
+
     #pageInfoHeader {
         width: 7%;
+        height: 350px;
     }
 
     #pageInfo {
         width: 89%;
+        margin-left: 4%;
     }
 
     #right {
@@ -235,7 +289,7 @@ nav a:hover {
         width: 77%;
     }
 
-    #aboutLink {
+    .info_sections {
         margin: 70px 0 10px;
     }
 
@@ -261,7 +315,25 @@ nav a:hover {
         text-decoration: none;
         color: black;
         padding: 8px 15px;
-    }    
+    } 
+
+    #game_container {
+        padding: 0 0 0 1px;
+        height: 200px;
+    }
+
+    .games_container {
+        margin: 4px 4px 20px 4px;
+        width: 180px;
+        padding: 8px;
+    }
+
+    .cards {
+        padding: 4px;
+        width: 38px;
+        height: 38px;
+        font-size: 1.2em;
+    } 
 }
 
 @media screen and (min-width: 544px) {
@@ -270,7 +342,8 @@ nav a:hover {
     }
 
     #header {
-        height: 139px;
+        height: 250px;
+        background-size: 480px 250px;
     }
 
     #pageInfoHeader {
@@ -286,7 +359,7 @@ nav a:hover {
         width: 65%;
     }
 
-    #aboutLink {
+    .info_sections {
         margin: 100px 0 10px;
         font-size: 1.2em;
     }
@@ -307,7 +380,25 @@ nav a:hover {
 
     .boxcr {
         width: 25%;
-    }    
+    }
+
+    #game_container {
+        height: 182px;
+    }
+
+    .games_container {
+        margin: 2px 2px 20px 2px;
+        width: 155px;
+        padding: 4px;
+    }
+
+    .cards {
+        padding: 2px;
+        width: 34px;
+        height: 34px;
+        font-size: 1.1em;
+    }
+
 }
 
 @media screen and (min-width: 672px) {
@@ -316,7 +407,8 @@ nav a:hover {
     }
 
     #header {
-        height: 166px;
+        height: 206px;
+        background-size: 580px 206px;
     }
 
     #wrapper {
@@ -343,7 +435,26 @@ nav a:hover {
 
     .boxcr {
         width: 20%;
-    }    
+    } 
+
+    #game_container {
+        padding: 0 0 0 3px;
+        height: 207px;
+    }
+
+    .games_container {
+        margin: 3px 3px 20px 3px;
+        width: 185px;
+        padding: 8px;
+    }
+
+    .cards {
+        margin: 2px;
+        padding: 3px;
+        width: 37px;
+        height: 37px;
+        font-size: 1.1em;
+    }   
 }
 
 @media screen and (min-width: 800px) {
@@ -352,7 +463,8 @@ nav a:hover {
     }
 
     #header {
-        height: 199px;
+        height: 229px;
+        background-size: 700px 229px;
     }
 
     #wrapper {
@@ -388,6 +500,22 @@ nav a:hover {
     .boxcr {
         width: 17%;
     }
+
+    #game_container {
+        padding: 0 0 0 1px;
+        height: 198px;
+    }
+
+    .games_container {
+        margin: 2px 2px 20px 2px;
+        width: 170px;
+    }
+
+    .cards {
+        margin: 1px;
+        width: 36px;
+        height: 36px;
+    }
 }
 
 @media screen and (min-width: 987px) {
@@ -397,6 +525,7 @@ nav a:hover {
 
     #header {
         height: 250px;
+        background-size: 900px 250px;
     }
 
     #wrapper {
@@ -429,7 +558,22 @@ nav a:hover {
 
     .boxcr {
         width: 20%;
-    }    
+    }  
+
+    #game_container {
+        padding: 0 0 0 4px;
+        height: 207px;
+    }
+
+    .games_container {
+        width: 185px;
+    }
+
+    .cards {
+        margin: 2px;
+        width: 37px;
+        height: 37px;
+    }   
 }
 
 @media screen and (min-width: 1200px) {   
@@ -439,6 +583,7 @@ nav a:hover {
 
     #header {
         height: 300px;
+        background-size: 1100px 300px;
     }
 
     #wrapper {
@@ -485,5 +630,19 @@ nav a:hover {
     .boxcr {
         width: 18%;
         font-size: 0.8em;
+    }
+
+    #game_container {
+        padding: 0 0 0 2px;
+        height: 202px;
+    }
+
+    .games_container {
+        width: 179px;
+    }
+
+    .cards {
+        width: 36px;
+        height: 36px;
     }
 }
