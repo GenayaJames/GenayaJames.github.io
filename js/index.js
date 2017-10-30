@@ -25,6 +25,32 @@ function main() {
 		document.getElementById("right").innerHTML = content;
 	}
 
+	var larrays = ["about", "games", "contact_us", "schedule"];
+	var larrays_length = larrays.length;
+
+	for(var l1 = 0; l1 < larrays_length; l1++) {
+		idHeaders(larrays[l1]);
+	}
+
+	function idHeaders(label) {
+		if(document.getElementById(label+"InfoHeader")!=null) {
+			var lbl = '';
+
+		for(var i = 0; i < label.length; i++) {
+			if(label[i] == "_") {
+				lbl += '<p>&nbsp;</p>';
+			}
+			else {
+				lbl += '<p>'+label[i]+'</p>';
+			}
+			
+		}
+
+		document.getElementById(label+"InfoHeader").innerHTML = lbl;
+		}
+		
+	}
+
 }
 
 

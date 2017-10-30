@@ -57,11 +57,9 @@ nav a:hover {
 }
 
 #header {
-    /*height: 87px;*/
     height: 167px;
     margin: 48px auto 10px;
     background: url("../img/header.jpg") center no-repeat;
-    /*background-size: 100%;*/
     background-size: 290px 167px;
 }
 
@@ -69,16 +67,16 @@ nav a:hover {
     margin: 30px auto 0;
 }
 
-#wrapper h1 {
+.pageInfoHeader p {
     text-align: center;
     font-weight: 100;
     text-transform: uppercase;
     color: black; 
     font-size: 1.2em;
-    margin-top: 20px;
 }
 
-#pageInfoHeader {
+.pageInfoHeader {
+    padding: 20px 0 0 0;
     width: 7%;
     height: 300px;
     border-left: 1px solid red;
@@ -270,11 +268,11 @@ nav a:hover {
         margin: 40px auto 0;
     }
 
-    #wrapper h1 {
+    .pageInfoHeader p {
         font-size: 1.5em;
     }
 
-    #pageInfoHeader {
+    .pageInfoHeader {
         width: 7%;
         height: 350px;
     }
@@ -346,7 +344,7 @@ nav a:hover {
         background-size: 480px 250px;
     }
 
-    #pageInfoHeader {
+    .pageInfoHeader {
         width: 6%;
     }
 
@@ -471,7 +469,7 @@ nav a:hover {
         margin: 45px auto 0;
     }
 
-    #pageInfoHeader {
+    .pageInfoHeader {
         width: 5%;
     }
 
