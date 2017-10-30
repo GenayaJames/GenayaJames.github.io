@@ -27,13 +27,13 @@ function main() {
     timer = setTimeout(showSlides, 5000);
   }
 
-  document.getElementById("previousButton").onclick = function() {
+  document.getElementById("previousButton").addEventListener("click", function() {
     plusSlides(-1);
-  }
+  },false);
 
-  document.getElementById("nextButton").onclick = function() {
+  document.getElementById("nextButton").addEventListener("click", function() {
     plusSlides(1);
-  }
+  },false);
   
 }
 

@@ -36,17 +36,17 @@ function main() {
 		if(document.getElementById(label+"InfoHeader")!=null) {
 			var lbl = '';
 
-		for(var i = 0; i < label.length; i++) {
-			if(label[i] == "_") {
-				lbl += '<p>&nbsp;</p>';
-			}
-			else {
-				lbl += '<p>'+label[i]+'</p>';
-			}
+			for(var i = 0; i < label.length; i++) {
+				if(label[i] == "_") {
+					lbl += '<p>&nbsp;</p>';
+				}
+				else {
+					lbl += '<p>'+label[i]+'</p>';
+				}
 			
-		}
+			}
 
-		document.getElementById(label+"InfoHeader").innerHTML = lbl;
+			document.getElementById(label+"InfoHeader").innerHTML = lbl;
 		}
 		
 	}

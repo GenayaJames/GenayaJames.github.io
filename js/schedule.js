@@ -152,6 +152,26 @@ function main() {
 	viewCalendar(2017);
 	viewCalendar(2018);	
 
+
+	function eventHeader(year1, year2) {
+		var lbl = '';
+
+		for(var i = 0; i < year1.length; i++) {
+			lbl += '<p>'+year1[i]+'</p>';			
+		}
+
+		lbl += '<p>&nbsp;</p><p>&darr;</p><p>&nbsp;</p>';
+
+		for(var i = 0; i < year2.length; i++) {
+			lbl += '<p>'+year2[i]+'</p>';			
+		}
+
+
+		document.getElementById("eventInfoHeader").innerHTML += lbl;
+	}
+
+	eventHeader("2017", "2018");
+
 	
 }
 
