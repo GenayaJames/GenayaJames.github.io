@@ -10,7 +10,7 @@
 }
 
 *:focus {
-    outline: red dotted 2px;   
+    outline: maroon dotted 2px;   
 }
 
 body {
@@ -28,7 +28,7 @@ body {
     z-index: 1;
 }
 
-#navigation nav, #header, #wrapper {
+#navigation nav, #header, #wrapper, #footer {
     width: 290px;
 }
 
@@ -49,7 +49,8 @@ nav a {
 }
 
 #currentPage {
-    color: red;
+    color: crimson;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -129,7 +130,7 @@ nav a:hover {
 }
 
 .rightSide {
-    border-top: 1px solid red;
+    border-top: 1px solid crimson;
     margin-bottom: 70px;
 }
 
@@ -149,7 +150,7 @@ nav a:hover {
 }
 
 #address a {
-    color: red;
+    color: crimson;
 }
 
 .bold {
@@ -200,8 +201,8 @@ nav a:hover {
     font-size: 0.7em;
     padding: 5px 0px;
     text-transform: uppercase;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
+    border-top: 1px solid crimson;
+    border-bottom: 1px solid crimson;
     border-left: 1px solid rgb(235,235,235);
     border-right: 1px solid rgb(235,235,235);
     font-family: Calibri, "Calibri Light", sans-serif;
@@ -254,8 +255,25 @@ nav a:hover {
     margin-top: 5px;
 }
 
+footer {
+    background-color: maroon;
+    padding: 80px 0 20px;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 60px;
+}
+
+#footer {
+    margin: 0 auto;
+}
+
+#footer p {
+    display: inline-block;
+}
+
 @media screen and (min-width: 434px) {
-    #navigation nav, #header, #wrapper {
+    #navigation nav, #header, #wrapper, #footer {
         width: 380px;
     }
 
@@ -307,7 +325,7 @@ nav a:hover {
 
     .boxcr {
         width:30%;
-    } 
+    }
 
     #game_container {
         padding: 0 0 0 1px;
@@ -329,7 +347,7 @@ nav a:hover {
 }
 
 @media screen and (min-width: 544px) {
-    #navigation nav, #header, #wrapper {
+    #navigation nav, #header, #wrapper, #footer {
         width: 480px;
     }
 
@@ -394,7 +412,7 @@ nav a:hover {
 }
 
 @media screen and (min-width: 672px) {
-    #navigation nav, #header, #wrapper {
+    #navigation nav, #header, #wrapper, #footer {
         width: 580px;
     }
 
@@ -450,7 +468,7 @@ nav a:hover {
 }
 
 @media screen and (min-width: 800px) {
-    #navigation nav, #header, #wrapper {
+    #navigation nav, #header, #wrapper, #footer {
         width: 700px;
     }
 
@@ -511,7 +529,7 @@ nav a:hover {
 }
 
 @media screen and (min-width: 987px) {
-    #navigation nav, #header, #wrapper {
+    #navigation nav, #header, #wrapper, #footer {
         width: 900px;
     }
 
@@ -569,7 +587,7 @@ nav a:hover {
 }
 
 @media screen and (min-width: 1200px) {   
-    #navigation nav, #header, #wrapper {
+    #navigation nav, #header, #wrapper, #footer {
         width: 1100px;
     }
 
