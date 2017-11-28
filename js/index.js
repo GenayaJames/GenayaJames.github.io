@@ -7,10 +7,7 @@ function main() {
 
 		content+='<div id="events" class="rightSide"><h2>Upcoming Events</h2><div class="clear"></div><div class="event"><dl>';
 
-		var events_array = [["Friday, November 10, 2017","Veterans Day - Closed"],
-		["Thursday, November 23, 2017","Thanksgiving - Closed, both Thursday and Friday, November 24, 2017"],
-		["Monday, January 15, 2018","Martin Luther King Day - Closed"],
-		["Monday, February 19, 2018","President's Day - Closed"]];
+		var events_array = [["Monday, January 15, 2018","Martin Luther King Day - Closed"],["Monday, February 19, 2018","President's Day - Closed"],["Friday, March 30, 2018","Good Friday - Closed"],["Monday, May 28, 2018","Memorial Day - Closed"]];
 
 		var events_length = events_array.length;
 
