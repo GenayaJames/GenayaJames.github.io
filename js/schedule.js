@@ -1,21 +1,23 @@
 function main() {
 
+	var d = document;
 	var all = 0;
 		
 	function makeTable(month, year, start, end, monthNum) {
 		var content = '';
 		var count = 1;
+		var i, j, k;
 
 		content += '<table id=\"' +month.toLowerCase()+ '\" class=\"innertable\"><tr><th colspan=\"7\">' + month + ' ' + year + '</th></tr><tr class=\"days\">';
 
-		for(var i = 0; i < day_array.length; i++) {
+		for(i = 0; i < day_array.length; i++) {
 			content += '<td>' + day_array[i] + '</td>';
 		}
 
-		for (var j = 0; j < 6; j++) {
+		for (j = 0; j < 6; j++) {
 			content += '<tr>';
 
-			for (var k = 0; k < 7; k++) {
+			for (k = 0; k < 7; k++) {
 				if (start > 0) {
 					content += '<td></td>';
 					start--;
@@ -45,16 +47,17 @@ function main() {
 
 		content+='</table>';
 
-		document.getElementById("calendar_"+year).innerHTML += content;
+		d.getElementById("calendar_"+year).innerHTML += content;
 
 		all++;
 
 		if( all == 24) {
-			for(var e1 = 28; e1 < 32; e1++) {
+			var e1, e2, e3;
+			for(e1 = 28; e1 < 32; e1++) {
 				addEvent("8"+e1+"2017", "M828F901", e1);
 			}
 
-			for(var e2 = 23; e2 < 25; e2++) {
+			for(e2 = 23; e2 < 25; e2++) {
 				addEvent("11"+e2+"2017", "T1123F1124", e2);
 			}
 
@@ -63,7 +66,7 @@ function main() {
 			var id_day_array = [1, 4, 9, 10, 15, 19, 30, 28];
 			var id_array_length = id_array.length;
 			
-			for(var e3 = 0; e3 < id_array_length; e3++) {
+			for(e3 = 0; e3 < id_array_length; e3++) {
 				addEvent(id_array[e3], id2_array[e3], id_day_array[e3]);
 			}
 		}
@@ -74,37 +77,38 @@ function main() {
 
 
 	function addEvent(id_name, ref_name, day) {
-		document.getElementById(id_name).innerHTML = '<a class=\"eventAdded\">'+day+'</a>';
+		d.getElementById(id_name).innerHTML = '<a class=\"eventAdded\">'+day+'</a>';
 	}
 
 
 	function makeEvent(id_name, d_event, e_descrip) {
-		var node = document.createElement("DIV");
+		var node = d.createElement("DIV");
 		node.id = id_name;
 		node.className = "allEvents";
 
-		var node2 = document.createElement("DIV");
+		var node2 = d.createElement("DIV");
 		node2.className = "pencil_icon";
 
 		node.appendChild(node2);
 
-		var node3 = document.createElement("H2");
-		var node3x = document.createTextNode(d_event);
+		var node3 = d.createElement("H2");
+		var node3x = d.createTextNode(d_event);
 		node3.appendChild(node3x);
 		node.appendChild(node3);
 
-		var node4 = document.createElement("P");
-		var node4x = document.createTextNode(e_descrip);
+		var node4 = d.createElement("P");
+		var node4x = d.createTextNode(e_descrip);
 		node4.appendChild(node4x);
 		node.appendChild(node4);
 
-	    document.getElementById("eventInfo").insertBefore(node, document.getElementById("pencil_end"));
+	    d.getElementById("eventInfo").insertBefore(node, d.getElementById("pencil_end"));
 	}
 
 	var m1_array = [["M828F901", "Monday, August 28, 2017", "Closed until Friday, September 1, 2017"], ["M904","Monday, September 4, 2017", "Labor Day - Closed"],["M1009", "Monday, October 9, 2017", "Columbus Day  - Closed"], ["F1110", "Friday, November 10, 2017", "Veterans Day  - Closed"], ["T1123F1124", "Thursday, November 23 - Friday, November 24, 2017", "Thanksgiving  - Closed"], ["M115", "Monday, January 15, 2018", "Martin Luther King Day - Closed"], ["M219", "Monday, February 19, 2018", "President's Day - Closed"], ["F330", "Friday, March 30, 2018", "Good Friday - Closed"], ["M528", "Monday, May 28, 2018", "Memorial Day - Closed"]];
+	var m1;
 	var m1_length = m1_array.length;
 
-	for(var m1 = 0; m1 < m1_length; m1++) {
+	for(m1 = 0; m1 < m1_length; m1++) {
 		makeEvent(m1_array[m1][0], m1_array[m1][1], m1_array[m1][2]);
 	} 
 
@@ -119,8 +123,10 @@ function main() {
 
 	var start2017_array = [0,3,3,6,1,4,6,2,5,0,3,5];
 	var end_array = [31,28,31,30,31,30,31,31,30,31,30,31];
+	var cal;
+	var monthsarraylength = month_array.length;
 
-	for (var cal = 0; cal < month_array.length; cal++) {
+	for (cal = 0; cal < monthsarraylength; cal++) {
 		makeTable(month_array[cal], 2017, start2017_array[cal], end_array[cal],cal+1);
 	}
 
@@ -130,7 +136,7 @@ function main() {
 
 	var start2018_array = [1,4,4,0,2,5,0,3,6,1,4,6];
 
-	for (var cal = 0; cal < month_array.length; cal++) {
+	for (cal = 0; cal < monthsarraylength; cal++) {
 		makeTable(month_array[cal], 2018, start2018_array[cal], end_array[cal],cal+1);
 	}
 
@@ -138,36 +144,46 @@ function main() {
 	
 
 	function viewCalendar(year) {
-		document.getElementById("button"+year).addEventListener("click", function(){
-		
-			var calendars = document.querySelectorAll(".calendar");
-			for(var i=0; i < calendars.length; i++) {
-				calendars[i].style.display = "none";
-			}
-			document.getElementById("calendar_"+year).style.display = "block";
-		
-		},false);
+		var viewCal = d.getElementById("button"+year);		
+
+		if(viewCal.addEventListener) {
+			viewCal.addEventListener("click", function(){calendarView(year);},false);
+		}
+		else if(viewCal.attachEvent) {
+			viewCal.attachEvent("onclick", function(){calendarView(year);},false);
+		}
+	}
+
+	function calendarView(year) {
+		var i;
+		var calendars = d.querySelectorAll(".calendar");
+		var calendarlength = calendars.length;
+		for(i=0; i < calendarlength; i++) {
+			calendars[i].style.display = "none";
+		}
+		d.getElementById("calendar_"+year).style.display = "block";
 	}
 
 	viewCalendar(2017);
 	viewCalendar(2018);	
 
-
+	
 	function eventHeader(year1, year2) {
 		var lbl = '';
+		var i;
 
-		for(var i = 0; i < year1.length; i++) {
+		for(i = 0; i < year1.length; i++) {
 			lbl += '<p>'+year1[i]+'</p>';			
 		}
 
 		lbl += '<p>&nbsp;</p><p>&darr;</p><p>&nbsp;</p>';
 
-		for(var i = 0; i < year2.length; i++) {
+		for(i = 0; i < year2.length; i++) {
 			lbl += '<p>'+year2[i]+'</p>';			
 		}
 
 
-		document.getElementById("eventInfoHeader").innerHTML += lbl;
+		d.getElementById("eventInfoHeader").innerHTML += lbl;
 	}
 
 	eventHeader("2017", "2018");

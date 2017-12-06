@@ -1,5 +1,6 @@
 function main() {
-	
+	var d = document;
+
 	rightSide();
 
 	function rightSide() {
@@ -9,9 +10,10 @@ function main() {
 
 		var events_array = [["Monday, January 15, 2018","Martin Luther King Day - Closed"],["Monday, February 19, 2018","President's Day - Closed"],["Friday, March 30, 2018","Good Friday - Closed"],["Monday, May 28, 2018","Memorial Day - Closed"]];
 
+		var i;
 		var events_length = events_array.length;
 
-		for(var i = 0; i < events_length; i++) {
+		for(i = 0; i < events_length; i++) {
 			content += '<dt class=\"bold\">'+events_array[i][0]+'</dt><dd>'+events_array[i][1]+'</dd>';
 		}
 
@@ -19,21 +21,23 @@ function main() {
           content += '</dl></div></div><div class="rightSide"></div>';
 
 
-		document.getElementById("right").innerHTML = content;
+		d.getElementById("right").innerHTML = content;
 	}
 
 	var larrays = ["about", "games", "contact_us", "schedule"];
+	var l1;
 	var larrays_length = larrays.length;
 
-	for(var l1 = 0; l1 < larrays_length; l1++) {
+	for(l1 = 0; l1 < larrays_length; l1++) {
 		idHeaders(larrays[l1]);
 	}
 
 	function idHeaders(label) {
-		if(document.getElementById(label+"InfoHeader")!=null) {
+		if(d.getElementById(label+"InfoHeader")!=null) {
 			var lbl = '';
+			var i;
 
-			for(var i = 0; i < label.length; i++) {
+			for(i = 0; i < label.length; i++) {
 				if(label[i] == "_") {
 					lbl += '<p>&nbsp;</p>';
 				}
@@ -43,10 +47,10 @@ function main() {
 			
 			}
 
-			document.getElementById(label+"InfoHeader").innerHTML = lbl;
+			d.getElementById(label+"InfoHeader").innerHTML = lbl;
 		}
 		
-	}
+	}	
 
 }
 
