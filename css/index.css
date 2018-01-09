@@ -118,12 +118,20 @@ nav a:hover {
     float:left;
 }
 
+.floatRight {
+    float: right;
+}
+
 .alignLeft {
     text-align: left;
 }
 
 .alignRight {
     text-align: right;
+}
+
+.bold {
+    font-weight: 600;
 }
 
 .rightSide h2 {

@@ -1,9 +1,9 @@
 function main() {
-  var d = document;
   var slideIndex = 1;
   var timer;
-  var previousB = d.getElementById("previousButton");
-  var nextB = d.getElementById("nextButton");
+  var previousB = document.getElementById("previousButton");
+  var nextB = document.getElementById("nextButton");
+  
   showSlides(slideIndex);
 
   function plusSlides(n) {
@@ -12,8 +12,7 @@ function main() {
   }
 
   function showSlides(n) {
-    var i;
-    var slides = d.getElementsByClassName("slides");
+    var slides = document.getElementsByClassName("slides");
     if (n===undefined){
       n = ++slideIndex;
     }
@@ -23,7 +22,7 @@ function main() {
     if (n < 1) {
       slideIndex = slides.length;
     }
-    for (i = 0; i < slides.length; i++) {
+    for (var i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
     }
     slides[slideIndex-1].style.display = "block";
@@ -42,13 +41,8 @@ function main() {
   }
   else if(nextB.attachEvent) {
     nextB.attachEvent("onclick", function() {plusSlides(1);},false);
-  }
-  
-  
+  }  
 }
-
-
-
 
 if (document.readyState!="loading") main();
 else if (document.addEventListener) document.addEventListener("DOMContentLoaded", main);
