@@ -7,28 +7,28 @@
          xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-  	  <loc>http://www.littlambsdayschool.com/</loc>
-  	  <lastmod>2017-10-30</lastmod>
-  	  <priority>1.00</priority>
+      <loc>http://www.littlelambs-dayschool.com/</loc>
+      <lastmod>2017-10-30</lastmod>
+      <priority>1.00</priority>
     </url>
 
     <url>
-  	  <loc>http://www.littlambsdayschool.com/content/about</loc>
-  	  <lastmod>2017-10-30</lastmod>
-  	  <priority>0.80</priority>
+      <loc>http://www.littlelambs-dayschool.com/content/about</loc>
+      <lastmod>2017-10-30</lastmod>
+      <priority>0.80</priority>
     </url>
 
     <url>
-  	  <loc>http://www.littlambsdayschool.com/content/contact</loc>
-  	  <lastmod>2017-10-30</lastmod>
-  	  <priority>0.80</priority>
-	</url>
+      <loc>http://www.littlelambs-dayschool.com/content/contact</loc>
+      <lastmod>2017-10-30</lastmod>
+      <priority>0.80</priority>
+    </url>
 
-	<url>
-  	  <loc>http://www.littlambsdayschool.com/content/schedule</loc>
-  	  <lastmod>2017-10-30</lastmod>
-  	  <changefreq>weekly</changefreq>
-  	  <priority>0.80</priority>
-	</url>
+    <url>
+      <loc>http://www.littlelambs-dayschool.com/content/schedule</loc>
+      <lastmod>2017-10-30</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.80</priority>
+    </url>
 
 </urlset>
